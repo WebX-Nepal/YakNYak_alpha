@@ -1,0 +1,44 @@
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.discover .swiper {
+  width: 80%;
+  height: 90vh;
+}
+
+.discover .swiper-slide:nth-child(1) {
+  /* background: #8acc7d; */
+}
+.discover .swiper-slide:nth-child(2) {
+  /* background: #8acc7d; */
+}
+.discover .swiper-slide:nth-child(3) {
+  /* background: #b7cc7d; */
+}
+.discover .swiper-slide:nth-child(4) {
+  /* background: #9eb75c; */
+}
+.discover .swiper-slide:nth-child(5) {
+  /* background: #7da8cc; */
+}
+.discover .swiper-slide:nth-child(6) {
+  /* background: #96cc7d; */
+}
+.discover .swiper-slide:nth-child(7) {
+  /* background: #cc7dae; */
+}

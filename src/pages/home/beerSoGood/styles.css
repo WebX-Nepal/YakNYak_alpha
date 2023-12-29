@@ -1,0 +1,13 @@
+.wood-bg {
+  background-image: url(../../../assets/wood_BG.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.wheat-bg {
+  background-image: url(../../../assets/wheat.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}

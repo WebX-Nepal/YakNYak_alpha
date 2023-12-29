@@ -1,0 +1,7 @@
+.paper-bg {
+  background-image: url(../../../assets/paper_BG.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
