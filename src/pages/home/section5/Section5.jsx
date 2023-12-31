@@ -16,7 +16,7 @@ const Section5 = () => {
                             Offer for bars and
                             restaurants</h3>
                         <p className='mt-5 w-[80%]'>Nulla imperdiet ultrices quam, et semper nibh fringilla in. Aenean a porttitor nisl, sed laoreet mauris eu ultrices enim tincidunt id.</p>
-                        <button className='bg-[#e6bf55] py-5 px-20 font-bold rounded-full text-[1.2em] hover:bg-white transition-all duration-300 mt-10'>Read More</button>
+                        <button className='bg-[#e6bf55] py-5 px-20 font-bold rounded-full text-[1.2em]  transition-all duration-300 mt-10 hover:bg-[#272361] text-[#272361] hover:text-[#e6bf55] '>Read More</button>
                     </div>
                     <div className="image">
                         <img src={handBeer} alt="" />

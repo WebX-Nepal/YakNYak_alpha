@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faGooglePlus, faGooglePlusG, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
-import navlogo from "../../assets/weisber.png";
+import yakLogo from "../../assets/logoYak.svg"
 
 
 const navbar = () => {
@@ -32,7 +32,7 @@ const navbar = () => {
                         </li>
                     </ul>
                     <div className="logo">
-                        <img src={navlogo} alt="" className="mr-16" />
+                        <img src={yakLogo} alt="imgerr" className="mr-16 h-[100px] w-[100px]" />
                     </div>
                     <div className="hamburger">
 

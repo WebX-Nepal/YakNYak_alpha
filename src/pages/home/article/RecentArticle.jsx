@@ -1,13 +1,22 @@
-import React from 'react'
-import article1 from "../../../assets/article1.jpg"
-import article2 from "../../../assets/article2.jpg"
-import article3 from "../../../assets/article3.jpg"
+import React, { useState } from 'react'
+// import article1 from "../../../assets/article1.jpg"
+// import article2 from "../../../assets/article2.jpg"
+// import article3 from "../../../assets/article3.jpg"
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircle } from '@fortawesome/free-solid-svg-icons';
+import History1986 from './history1986';
+
+
 
 const RecentArticle = () => {
+    const [initial, setInitial] = useState(false);
+
+
     return (
         <>
-            <div className="article h-[120vh] w-full">
-                <div className="content pt-24">
+            <div className="article  w-full">
+                {/* <div className="content pt-24">
                     <h1 className='text-[3.5em] font-bold text-center' >Recent Articles</h1>
                     <div className="card flex justify-center gap-20 mt-10">
                         <div className="item w-[23%] bg-[#f6f3ee] ">
@@ -61,7 +70,40 @@ const RecentArticle = () => {
                     </div>
 
                     <div className="button w-full flex justify-center xl:mt-7">
-                        <button className='bg-[#e6bf55] py-5 px-20 font-bold rounded-full text-[1.2em] hover:bg-white transition-all duration-300 mt-10'>Read More</button>
+                        <button className='bg-[#e6bf55] hover:bg-[#272361] py-5 px-20 font-bold rounded-full text-[1.2em] transition-all duration-300 mt-10 hover:text-yellow-500 text-[#272361]'>Read More</button>
+                    </div>
+                </div> */}
+                <div className="content">
+                    <h1 className='text-center font-bold text-[2em] xl:w-[60%] m-auto pt-24 tracking-wider'>Carlton & United Breweries is the most iconic beer company in Australia, with a history dating back to 1832</h1>
+                    <div className="history-year flex gap-5 justify-center mt-10">
+                        <div className="year">
+                            <h5 onClick={() => setInitial(!initial)} className='cursor-pointer  '>1864</h5>
+                            <FontAwesomeIcon icon={faCircle} className='h-2' />
+                        </div>
+                        <div className="year">
+                            <h5>1986</h5>
+                            <FontAwesomeIcon icon={faCircle} className='h-2' />
+                        </div>
+                        <div className="year">
+                            <h5>1986</h5>
+                            <FontAwesomeIcon icon={faCircle} className='h-2' />
+                        </div>
+                        <div className="year">
+                            <h5>1986</h5>
+                            <FontAwesomeIcon icon={faCircle} className='h-2' />
+                        </div>
+                        <div className="year">
+                            <h5>1986</h5>
+                            <FontAwesomeIcon icon={faCircle} className='h-2' />
+                        </div>
+                    </div>
+                    <div className="history-details mt-10">
+                        <h1>
+                            {
+                                initial && <History1986 />
+                            }
+
+                        </h1>
                     </div>
                 </div>
             </div >

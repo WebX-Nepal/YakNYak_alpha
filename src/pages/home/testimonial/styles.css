@@ -50,6 +50,7 @@ body {
   justify-content: center;
   font-weight: bold;
   color: var(--swiper-theme-color);
+  display: none;
 }
 
 .testimonial .autoplay-progress svg {

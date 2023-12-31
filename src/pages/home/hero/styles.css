@@ -32,6 +32,7 @@ body {
 }
 .swiper-button-next {
   padding: 0 300px;
+  background-image: url(../../../assets/arrows.svg);
 }
 .swiper-button-prev {
   padding: 0 300px;
