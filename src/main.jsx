@@ -4,6 +4,7 @@ import App from "./App.jsx";
 import "./index.css";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar.jsx";
+import Footer from "./components/footer/Footer.jsx";
 
 
 
@@ -15,6 +16,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route element={<App />} path="/"></Route>
 
       </Routes>
+      <Footer />
     </React.StrictMode>
   </BrowserRouter>
 );
