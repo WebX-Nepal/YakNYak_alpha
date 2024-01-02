@@ -15,9 +15,9 @@ const Discover = () => {
     return (
         <>
             <div className="discover h-[150vh] w-full">
-                <div className="heading w-[50%] m-auto pt-32">
+                <div className="heading w-[50%] m-auto pt-20">
                     <h1 className='text-center font-bold text-[3em]'>Discover our beer</h1>
-                    <p className='text-center text-[grey] pt-5'>The YakNYak is a delightful fusion of toasted grains and floral notes, inviting you to experience a taste journey reminiscent of a crisp mountain breeze. With a medium body and a smooth finish, 'Yak N Yak' is the perfect companion for those seeking a flavorful and refreshing escape. Raise your glass and savor the taste of nature in every sip.</p>
+                    <p className='text-center text-[grey] pt-5 text-[1.2em]'>The YakNYak is a delightful fusion of toasted grains and floral notes, inviting you to experience a taste journey reminiscent of a crisp mountain breeze. With a medium body and a smooth finish, 'Yak N Yak' is the perfect companion for those seeking a flavorful and refreshing escape. Raise your glass and savor the taste of nature in every sip.</p>
                 </div>
                 <div className="swiper-beer pt-10 ">
                     <Swiper watchSlidesProgress={true} slidesPerView={3} className="swipper">

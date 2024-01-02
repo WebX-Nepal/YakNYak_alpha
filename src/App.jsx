@@ -26,7 +26,7 @@ function App() {
       <Section5 />
       <Section6 />
       <Review />
-      <Divider2 />
+      {/* <Divider2 /> */}
       <Articles />
 
     </>

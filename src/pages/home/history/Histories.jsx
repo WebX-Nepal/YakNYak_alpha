@@ -41,7 +41,7 @@ const Histories = () => {
             <div className="article  w-full bg-white pb-20" >
                 <div className="content">
                     <h1 className='text-center font-bold text-[2em] xl:w-[60%] m-auto pt-24 tracking-wider'>Carlton & United Breweries is the most iconic beer company in Australia, with a history dating back to 1832</h1>
-                    <div className="history-year flex gap-10 font-bold justify-center mt-10">
+                    <div className="history-year flex gap-10 font-bold justify-center mt-20">
                         {buttonNames.map((item, index) => {
                             return <div> <div key={index} className={`${displayYear == item.year ? "text-[#e6bf55] mt-[-15px] text-[2em]" : "text-black"} text-[1.5em] cursor-pointer`}>
                                 <butoon
@@ -52,11 +52,20 @@ const Histories = () => {
                             </div>
                         })}
                     </div>
-                    <div className="history-details mt-10">
+                    <div className="history-details mt-20">
                         {data.map((item, index) => {
                             if (displayYear == item.year)
                                 return (<>
-                                    <div key={index} className='history-container '>
+                                    <div key={index} className="history-container flex  w-full justify-center gap-16">
+                                        <div className="content w-[30%]">
+                                            <h1 className='font-bold text-[1.5em] '>{item.title}</h1>
+                                            <p className='text-[grey] mt-5 text-[1.2em] tracking-wider'>{item.content}</p>
+                                        </div>
+                                        <div className="content-img w-[40%]">
+                                            <img src={item.image} alt="img err" className='xl:h-[500px] xl:w-[600px] object-cover' />
+                                        </div>
+                                    </div>
+                                    {/* <div key={index} className='history-container '>
                                         <div className="content w-[40%] p-10 m-auto relative bg-[white] left-24 z-10">
                                             <h4 className='font-bold text-[1.5em] '>{item.title}</h4>
                                             <p className='text-[grey] mt-5 text-[1.2em] tracking-wider'>{item.content}</p>
@@ -64,7 +73,7 @@ const Histories = () => {
                                     </div>
                                     <div className="image flex justify-center mt-[-60px] ">
                                         <img src={item.image} alt="img err" className='xl:h-[700px] xl:w-[1000px] object-cover' />
-                                    </div>
+                                    </div> */}
                                 </>)
                         })}
                     </div>

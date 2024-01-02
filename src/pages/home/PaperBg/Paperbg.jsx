@@ -1,41 +1,51 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./styles.css"
-import bottling from "../../../assets/bottling.png"
-import mashing from "../../../assets/mashing.png"
-import boiling from "../../../assets/boiling.png"
-import cooling from "../../../assets/cooling.png"
+
+
+// content js
+import { data } from "./content";
 
 const Paperbg = () => {
+
+    const [isHovered, setIsHovered] = useState(0);
+    const handleHover = (id) => {
+        setIsHovered(id);
+    };
+    const handleMouseLeave = () => {
+        setIsHovered(0);
+    };
+    console.log("isHovered is", isHovered)
     return (
         <>
             <div className="paper-bg h-[115vh] w-full">
-                <h2 className='text-[2.5em] w-[65%] m-auto font-bold pt-24 text-center'>«Our brewery uses classical <span className='text-[#e6bf55]'>individual beer technology</span> , taking into account the desires of our consumers. We practice innovation and experimentation.»</h2>
+                <h2 className='text-[2.5em] w-[65%] m-auto font-bold pt-24 text-center'>« Our brewery uses classical <span className='text-[#e6bf55]'>individual beer technology</span> , we practice innovation and experimentation. »</h2>
 
                 <div className="flex justify-center items-center text-center gap-20 w-[80%] m-auto pt-20">
 
-                    <div className="flex flex-col gap-4">
-                        <img src={mashing} alt="" srcset="" style={{ height: "200px", margin: "auto" }} />
-                        <h3 className='font-bold text-[1.4em]'>Malt mashing</h3>
-                        <p className='tracking-wider'>Aenean a porttitor nisl, sed laoreet mauris. Pellentesque fermentum gravida massa, eu ultrices enim .</p>
-                    </div>
-                    <div className="flex flex-col gap-4">
-                        <img src={boiling} alt="" srcset="" style={{ height: "200px", margin: "auto" }} />
-                        <h3 className='font-bold text-[1.4em]'>Filtration and boiling</h3>
-                        <p className='tracking-wider'>Aenean a porttitor nisl, sed laoreet mauris. Pellentesque fermentum gravida massa, eu ultrices enim .</p>
-                    </div>
-                    <div className="flex flex-col gap-4">
-                        <img src={cooling} alt="" srcset="" style={{ height: "200px", margin: "auto" }} />
-                        <h3 className='font-bold text-[1.4em]'>Fermentation and cooling</h3>
-                        <p className='tracking-wider'>Aenean a porttitor nisl, sed laoreet mauris. Pellentesque fermentum gravida massa, eu ultrices enim .</p>
-                    </div>
-                    <div className="flex flex-col gap-4">
-                        <img src={bottling} alt="" srcset="" style={{ height: "200px", margin: "auto" }} />
-                        <h3 className='font-bold text-[1.4em]'>Filtration and bottling</h3>
-                        <p className='tracking-wider'>Aenean a porttitor nisl, sed laoreet mauris. Pellentesque fermentum gravida massa, eu ultrices enim .</p>
-                    </div>
+
+                    {data.map((item, index) => {
+                        return <>
+                            <div className="flex flex-col gap-4 relative mt-20">
+                                <div className={`rounded-full m-auto h-[150px] w-[150px] transition-all duration-300 ${isHovered == item.id ? "bg-wrapper bg-[#e6bf55] scale-[1.2] " : "bg-[#e6bf55]"}
+                            `} onMouseOver={() => handleHover(item.id)}
+                                    onMouseOut={handleMouseLeave}>
+
+                                </div>
+                                <img key={index} src={item.image} alt=""
+                                    onMouseOver={() => handleHover(item.id)}
+                                    onMouseOut={handleMouseLeave}
+                                    style={{ height: "240px", margin: "auto" }} className='absolute top-[20%] left-[50%] transform -translate-x-1/2 -translate-y-1/2
+                            hover:cursor-pointer
+                            ' />
+
+                                <h3 className='font-bold text-[1.4em] mt-10 text-[#272361]'>{item.title}</h3>
+                                <p className='tracking-wider'>{item.content}</p>
+                            </div >
+                        </>
+                    })}
                 </div>
 
-            </div>
+            </div >
         </>
     )
 }

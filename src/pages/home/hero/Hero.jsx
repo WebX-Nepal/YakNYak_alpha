@@ -41,14 +41,14 @@ const Hero = () => {
                 className="mySwiper"
             >
                 <SwiperSlide className='slide1-bg'>
-                    <div className="content-slide2 flex flex-col items-center justify-center  h-full w-full bg-black/50">
+                    <div className="content-slide2 flex flex-col items-center justify-center  h-full w-full bg-black/60">
                         <h1 className='text-white text-[5em] font-bold mt-20'>Private <span className='text-[#e6bf55]'>CraftBrewery</span></h1>
                         <span className='text-white text-[1.2em]'>Nulla imperdiet ultrices quam, et semper nibh fringilla in.Aenean a porttitor nisl,sed laoreet mauris.</span>
                         <button className='bg-[#e6bf55] py-5 px-20 font-bold rounded-full mt-20 text-[1.2em]  transition-all duration-300 hover:bg-[#272361] text-[#272361] hover:text-[#e6bf55] '>Get beer</button>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='slide2-bg  '>
-                    <div className="content-slide2 flex flex-col items-center justify-center  h-full w-full bg-black/50">
+                    <div className="content-slide2 flex flex-col items-center justify-center  h-full w-full bg-black/60">
                         <h1 className='text-white text-[5em] font-bold mt-20'>Traditions <span className='text-[#e6bf55]'>of Brewing</span></h1>
                         <span className='text-white text-[1.2em]'>Nulla imperdiet ultrices quam, et semper nibh fringilla in.Aenean a porttitor nisl,sed laoreet mauris.</span>
                         <button className='bg-[#e6bf55] py-5 px-20 font-bold rounded-full mt-20 text-[1.2em]  transition-all duration-300 hover:bg-[#272361] text-[#272361] hover:text-[#e6bf55] '>Get beer</button>
@@ -56,21 +56,21 @@ const Hero = () => {
 
                 </SwiperSlide>
                 <SwiperSlide className='slide3-bg'>
-                    <div className="content-slide2 flex flex-col items-center justify-center  h-full w-full bg-black/50">
+                    <div className="content-slide2 flex flex-col items-center justify-center  h-full w-full bg-black/60">
                         <h1 className='text-white text-[5em] font-bold mt-20'>Beer Culture <span className='text-[#e6bf55]'>Leader</span></h1>
                         <span className='text-white text-[1.2em]'>Nulla imperdiet ultrices quam, et semper nibh fringilla in.Aenean a porttitor nisl,sed laoreet mauris.</span>
                         <button className='bg-[#e6bf55] py-5 px-20 font-bold rounded-full mt-20 text-[1.2em]  transition-all duration-300 hover:bg-[#272361] text-[#272361] hover:text-[#e6bf55] '>Get beer</button>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='slide4-bg'>
-                    <div className="content-slide2 flex flex-col items-center justify-center  h-full w-full bg-black/50">
+                    <div className="content-slide2 flex flex-col items-center justify-center  h-full w-full bg-black/60">
                         <h1 className='text-white text-[5em] font-bold mt-20'>Handcrafted <span className='text-[#e6bf55]'>with Soul</span></h1>
                         <span className='text-white text-[1.2em]'>Nulla imperdiet ultrices quam, et semper nibh fringilla in.Aenean a porttitor nisl,sed laoreet mauris.</span>
                         <button className='bg-[#e6bf55] py-5 px-20 font-bold rounded-full mt-20 text-[1.2em]  transition-all duration-300 hover:bg-[#272361] text-[#272361] hover:text-[#e6bf55] '>Get beer</button>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='slide5-bg'>
-                    <div className="content-slide2 flex flex-col items-center justify-center  h-full w-full bg-black/50">
+                    <div className="content-slide2 flex flex-col items-center justify-center  h-full w-full bg-black/60">
                         <h1 className='text-white text-[5em] font-bold mt-20'>Freedom <span className='text-[#e6bf55]'>of Taste</span></h1>
                         <span className='text-white text-[1.2em]'>Nulla imperdiet ultrices quam, et semper nibh fringilla in.Aenean a porttitor nisl,sed laoreet mauris.</span>
                         <button className='bg-[#e6bf55] py-5 px-20 font-bold rounded-full mt-20 text-[1.2em] transition-all duration-300 hover:bg-[#272361] text-[#272361] hover:text-[#e6bf55] '>Get beer</button>
