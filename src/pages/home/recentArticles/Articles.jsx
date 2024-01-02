@@ -10,7 +10,7 @@ const Articles = () => {
                 <div className="content pt-24">
                     <h1 className='text-[3.5em] font-bold text-center' >Recent Articles</h1>
                     <div className="card  flex justify-center gap-20 mt-10">
-                        <div className="item hover:rounded-t-xl rounded-t-xl rounded-xl w-[23%] bg-[#f6f3ee] ">
+                        <div className="item rounded-xl w-[23%] bg-[#f6f3ee] ">
                             <div className="overflow-hidden rounded-t-xl">
                                 <img src={article1}
                                     alt="articleimgerr" className='hover:scale-105 transition-all duration-300  ' />
@@ -27,8 +27,8 @@ const Articles = () => {
 
 
                         </div>
-                        <div className="item w-[23%] bg-[#f6f3ee]">
-                            <div className="overflow-hidden ">
+                        <div className="item rounded-xl w-[23%] bg-[#f6f3ee]">
+                            <div className="overflow-hidden rounded-t-xl">
                                 <img src={article2}
                                     alt="articleimgerr" className='hover:scale-105 transition-all duration-300' />
                             </div>
@@ -42,8 +42,8 @@ const Articles = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="item w-[23%] bg-[#f6f3ee] ">
-                            <div className="overflow-hidden ">
+                        <div className="item rounded-xl w-[23%] bg-[#f6f3ee] ">
+                            <div className="overflow-hidden rounded-t-xl">
                                 <img src={article3}
                                     alt="articleimgerr" className='hover:scale-105 transition-all duration-300' />
                             </div>
