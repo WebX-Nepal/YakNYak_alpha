@@ -43,29 +43,33 @@ const Review = () => {
                             className="mySwiper"
                         >
                             <SwiperSlide className='flex flex-col'>
+                                <img src={user1} alt="" style={{ height: "70px", width: "70px" }} className='mt-20' />
+                                <span className='font-bold text-[#e6bf55]'>Anatisia Stone</span>
                                 <h6 className='w-[50%] m-auto text-center'>
                                     "Exceptional beer with a perfect balance of flavors! From the first sip to the last, it delivers a rich and satisfying experience. The aroma is inviting, the taste is smooth, and the finish is crisp. A true delight for beer enthusiasts – this brew combines craftsmanship and quality ingredients seamlessly. Whether enjoyed alone or with friends, it's a go-to choice that never disappoints. Cheers to a fantastic beer that deserves every bit of praise!"</h6>
-                                <img src={user1} alt="" style={{ height: "70px", width: "70px" }} className='xl:mt-[-100px]' />
-                                <span className='mt-4 font-bold text-[#e6bf55]'>Anatisia Stone</span>
+
 
                             </SwiperSlide>
                             <SwiperSlide className='flex flex-col'>
+                                <img src={user1} alt="" style={{ height: "70px", width: "70px" }} className='mt-20' />
+                                <span className='font-bold text-[#e6bf55]'>Anatisia Stone</span>
                                 <p className='w-[50%] m-auto text-center'>
                                     "Exceptional beer with a perfect balance of flavors! From the first sip to the last, it delivers a rich and satisfying experience. The aroma is inviting, the taste is smooth, and the finish is crisp. A true delight for beer enthusiasts – this brew combines craftsmanship and quality ingredients seamlessly. Whether enjoyed alone or with friends, it's a go-to choice that never disappoints. Cheers to a fantastic beer that deserves every bit of praise!"</p>
-                                <img src={user1} alt="" style={{ height: "70px", width: "70px" }} className='xl:mt-[-100px]' />
-                                <span className='mt-4 font-bold text-[#e6bf55]'>Anatisia Stone</span>
+
                             </SwiperSlide>
                             <SwiperSlide className='flex flex-col'>
+                                <img src={user1} alt="" style={{ height: "70px", width: "70px" }} className='mt-20' />
+                                <span className='font-bold text-[#e6bf55]'>Anatisia Stone</span>
                                 <p className='w-[50%] m-auto text-center'>
                                     "Exceptional beer with a perfect balance of flavors! From the first sip to the last, it delivers a rich and satisfying experience. The aroma is inviting, the taste is smooth, and the finish is crisp. A true delight for beer enthusiasts – this brew combines craftsmanship and quality ingredients seamlessly. Whether enjoyed alone or with friends, it's a go-to choice that never disappoints. Cheers to a fantastic beer that deserves every bit of praise!"</p>
-                                <img src={user1} alt="" style={{ height: "70px", width: "70px" }} className='xl:mt-[-100px]' />
-                                <span className='mt-4 font-bold text-[#e6bf55]'>Anatisia Stone</span>
+
                             </SwiperSlide>
                             <SwiperSlide className='flex flex-col'>
+                                <img src={user1} alt="" style={{ height: "70px", width: "70px" }} className='mt-20' />
+                                <span className='font-bold text-[#e6bf55]'>Anatisia Stone</span>
                                 <p className='w-[50%] m-auto text-center'>
                                     "Exceptional beer with a perfect balance of flavors! From the first sip to the last, it delivers a rich and satisfying experience. The aroma is inviting, the taste is smooth, and the finish is crisp. A true delight for beer enthusiasts – this brew combines craftsmanship and quality ingredients seamlessly. Whether enjoyed alone or with friends, it's a go-to choice that never disappoints. Cheers to a fantastic beer that deserves every bit of praise!"</p>
-                                <img src={user1} alt="" style={{ height: "70px", width: "70px" }} className='xl:mt-[-100px]' />
-                                <span className='mt-4 font-bold text-[#e6bf55]'>Anatisia Stone</span>
+
                             </SwiperSlide>
 
                             <div className="autoplay-progress" slot="container-end">

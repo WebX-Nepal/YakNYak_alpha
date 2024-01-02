@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faGooglePlus, faGooglePlusG, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faGooglePlusG, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import yakLogo from "../../assets/logoYak.svg"
 
 
@@ -15,7 +15,7 @@ const navbar = () => {
     return (
         <>
             <div className="nav-container px-36 flex   font-mono tracking-wider absolute z-10 w-full bg-transparents text-[1.5em]">
-                <div className="nav-menu flex w-full justify-between mt-7">
+                <div className="nav-menu flex w-full justify-between items-center mt-7">
                     <ul className="social-media flex gap-5 text-[#e6bf55] text-[.8em]">
                         <li className="hover:text-[white] transition-all duration-500">
                             <Link to="/" ><FontAwesomeIcon icon={faTwitter} /></Link>
@@ -34,9 +34,8 @@ const navbar = () => {
                     <div className="logo">
                         <img src={yakLogo} alt="imgerr" className="mr-16 h-[100px] w-[100px]" />
                     </div>
+
                     <div className="hamburger">
-
-
                         <nav >
                             <div className="container mx-auto flex justify-between items-center">
                                 {/* <div className="text-white">Logo</div> */}
@@ -54,7 +53,7 @@ const navbar = () => {
                                         <div className=" absolute top-0 right-0 w-[50%] h-screen bg-[#262022] transition-opacity duration-300 ease-in-out opacity-100 p-10">
                                             <div className="flex justify-between p-4">
                                                 <div className="logo">
-                                                    <img src={navlogo} alt="" />
+                                                    <img src={yakLogo} alt="logoimgerr" className="h-20" />
                                                 </div>
                                                 <button
                                                     className="text-white p-2 focus:outline-none"

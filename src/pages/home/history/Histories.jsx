@@ -2,50 +2,53 @@ import React, { useState } from 'react'
 import { data, buttonNames } from "./staticContent";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
+import { NavLink } from 'react-router-dom';
+import Paperbg from '../../../assets/paper_BG.jpg';
 
-const RecentArticle = () => {
+const Histories = () => {
     const [displayYear, setDisplayYear] = useState("1832")
-    function handleSwitches(name) {
-        switch (name) {
+    // function handleSwitches(name) {
+    //     switch (name) {
+    //         case "1832":
+    //             setDisplayYear("1832")
+    //             break;
+    //         case "1854":
+    //             setDisplayYear("1854")
+    //             break;
+    //         case "1864":
+    //             setDisplayYear("1864")
+    //             break;
+    //         case "1870":
+    //             setDisplayYear("1870")
+    //             break;
+    //         case "1887":
+    //             setDisplayYear("1887")
+    //             break;
+    //         case "1907":
+    //             setDisplayYear("1907")
+    //             break;
 
-            case "1832":
-                setDisplayYear("1832")
-                break;
-            case "1854":
-                setDisplayYear("1854")
-                break;
-            case "1864":
-                setDisplayYear("1864")
-                break;
-            case "1870":
-                setDisplayYear("1870")
-                break;
-            case "1887":
-                setDisplayYear("1887")
-                break;
-            case "1907":
-                setDisplayYear("1907")
-                break;
-
-            case "1930s":
-                setDisplayYear("1930s")
-                break;
-            default:
-                setDisplayYear("2000")
-        }
-    }
+    //         case "1930s":
+    //             setDisplayYear("1930s")
+    //             break;
+    //         default:
+    //             setDisplayYear("2000")
+    //     }
+    // }
 
     return (
         <>
-            <div className="article  w-full bg-white">
+            <div className="article  w-full bg-white pb-20" >
                 <div className="content">
                     <h1 className='text-center font-bold text-[2em] xl:w-[60%] m-auto pt-24 tracking-wider'>Carlton & United Breweries is the most iconic beer company in Australia, with a history dating back to 1832</h1>
-                    <div className="history-year flex gap-5 justify-center mt-10">
+                    <div className="history-year flex gap-10 font-bold justify-center mt-10">
                         {buttonNames.map((item, index) => {
-                            return <div key={index} className="year">
-                                <h5 className='cursor-pointer'
-                                    onClick={() => handleSwitches(item.year)} >{item.year}</h5>
-                                <FontAwesomeIcon icon={faCircle} className='h-2' />
+                            return <div> <div key={index} className={`${displayYear == item.year ? "text-[#e6bf55] mt-[-15px] text-[2em]" : "text-black"} text-[1.5em] cursor-pointer`}>
+                                <butoon
+                                    onClick={() => setDisplayYear(item.year)} >{item.year}</butoon>
+
+                            </div>
+                                <FontAwesomeIcon icon={faCircle} className='h-2 w-full' />
                             </div>
                         })}
                     </div>
@@ -71,4 +74,4 @@ const RecentArticle = () => {
     )
 }
 
-export default RecentArticle
+export default Histories

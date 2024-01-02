@@ -9,7 +9,8 @@ import Section5 from "./pages/home/section5/Section5";
 import Section6 from "./pages/home/section6/section6";
 import Review from "./pages/home/testimonial/Review";
 import Divider2 from "./pages/home/divider2/divider2";
-import RecentArticle from "./pages/home/article/RecentArticle";
+import Articles from "./pages/home/recentArticles/Articles";
+import Histories from "./pages/home/history/Histories";
 
 
 
@@ -19,13 +20,14 @@ function App() {
       <Hero />
       <Wood />
       <Paperbg />
+      <Histories />
       <Divider />
       <Discover />
       <Section5 />
       <Section6 />
       <Review />
       <Divider2 />
-      <RecentArticle />
+      <Articles />
 
     </>
   )

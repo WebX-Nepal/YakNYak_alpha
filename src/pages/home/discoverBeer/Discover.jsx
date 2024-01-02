@@ -7,11 +7,9 @@ import "swiper/css";
 
 import "./discover.css";
 
-import mildBeer from "../../../assets/mildBeer.png";
-import goldenBeer from "../../../assets/goldenBeer.png";
-import premiumBeer from "../../../assets/premuimBeer.png";
-import craftBeer from "../../../assets/craftBeer.png";
-import weiss from "../../../assets/weiss.png";
+import yaknNak from "../../../assets/beer1.png";
+import yaknNak2 from "../../../assets/beer2.png";
+
 
 const Discover = () => {
     return (
@@ -25,39 +23,29 @@ const Discover = () => {
                     <Swiper watchSlidesProgress={true} slidesPerView={3} className="swipper">
                         <SwiperSlide>
 
-                            <img src={mildBeer} alt="" className="hover:scale-105 transition-all duration-300" style={{ objectFit: "contain", height: "80%" }} />
+                            <img src={yaknNak} alt="" className="hover:scale-105 transition-all duration-300" style={{ objectFit: "cover", height: "80%" }} />
                             <h2 className="font-bold text-[1.5em] text-center pt-5">Mild Lager Beer</h2>
                             <p className="text-center tracking-wider mt-3">ABV 6.5% | IBU 60 | OG 1.104</p>
 
                         </SwiperSlide>
 
                         <SwiperSlide>
-                            <img src={goldenBeer} alt="" className="hover:scale-105 transition-all duration-300" style={{ objectFit: "contain", height: "80%" }} />
+                            <img src={yaknNak} alt="" className="hover:scale-105 transition-all duration-300" style={{ objectFit: "cover", height: "80%" }} />
                             <h2 className="font-bold text-[1.5em] text-center pt-5">Mild Lager Beer</h2>
                             <p className="text-center tracking-wider mt-3">ABV 6.5% | IBU 60 | OG 1.104</p>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src={premiumBeer} alt="" className="hover:scale-105 transition-all duration-300" style={{ objectFit: "contain", height: "80%" }} />
+                            <img src={yaknNak2} alt="" className="hover:scale-105 transition-all duration-300" style={{ objectFit: "cover", height: "80%" }} />
                             <h2 className="font-bold text-[1.5em] text-center pt-5">Mild Lager Beer</h2>
                             <p className="text-center tracking-wider mt-3">ABV 6.5% | IBU 60 | OG 1.104</p>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src={craftBeer} alt="" className="hover:scale-105 transition-all duration-300" style={{ objectFit: "contain", height: "80%" }} />
+                            <img src={yaknNak2} alt="" className="hover:scale-105 transition-all duration-300" style={{ objectFit: "cover", height: "80%" }} />
                             <h2 className="font-bold text-[1.5em] text-center pt-5">Mild Lager Beer</h2>
                             <p className="text-center tracking-wider mt-3">ABV 6.5% | IBU 60 | OG 1.104</p>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src={weiss} alt="" className="hover:scale-105 transition-all duration-300" style={{ objectFit: "contain", height: "80%" }} />
-                            <h2 className="font-bold text-[1.5em] text-center pt-5">Mild Lager Beer</h2>
-                            <p className="text-center tracking-wider mt-3">ABV 6.5% | IBU 60 | OG 1.104</p>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            {/* <img src={mildBeer} alt="" className="hover:scale-105 transition-all duration-300" style={{ objectFit: "contain", height: "900%" }} /> */}
-                            <h2 className="font-bold text-[1.5em] text-center pt-5">Mild Lager Beer</h2>
-                            <p className="text-center tracking-wider mt-3">ABV 6.5% | IBU 60 | OG 1.104</p>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            {/* <img src={mildBeer} alt="noimg" className="hover:scale-105 transition-all duration-300" style={{ objectFit: "contain", height: "900%" }} /> */}
+                            <img src={yaknNak} alt="" className="hover:scale-105 transition-all duration-300" style={{ objectFit: "cover", height: "80%" }} />
                             <h2 className="font-bold text-[1.5em] text-center pt-5">Mild Lager Beer</h2>
                             <p className="text-center tracking-wider mt-3">ABV 6.5% | IBU 60 | OG 1.104</p>
                         </SwiperSlide>

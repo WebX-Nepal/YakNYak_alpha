@@ -22,18 +22,30 @@ body {
   width: 100%;
 }
 .swiper-button-next {
-  padding: 0 300px;
+  margin-top: -100px;
+  height: 200px;
+  width: 200px;
+  padding: 0 200px;
   background-image: url(../../../assets/arrows.svg);
+  background-repeat: no-repeat;
+  filter: invert(1);
 }
 .swiper-button-prev {
-  padding: 0 300px;
+  margin-top: -100px;
+  height: 200px;
+  width: 200px;
+  padding: 0 200px;
+  background-image: url(../../../assets/arrows.svg);
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+  filter: invert(1);
 }
 
 .swiper-button-next:after {
-  color: gray;
+  display: none;
 }
 .swiper-button-prev:after {
-  color: gray;
+  display: none;
 }
 
 .swiper-pagination-bullets.swiper-pagination-horizontal {

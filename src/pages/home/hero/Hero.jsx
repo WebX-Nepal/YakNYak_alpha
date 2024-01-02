@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
-
-
+import arrow from "../../../assets/arrows.svg";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -20,6 +19,8 @@ import {
 } from 'swiper/modules';
 
 const Hero = () => {
+
+
     return (
         <>
 
