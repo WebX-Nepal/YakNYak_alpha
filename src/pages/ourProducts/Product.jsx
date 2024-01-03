@@ -16,7 +16,8 @@ import logo from "../../assets/logoYak.svg";
 const Product = () => {
   return (
     <>
-      <div className="about-bg brightness-50 h-[40vh] w-full" style={{ backgroundImage: `url(${product})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}>
+      <div className="about-bg brightness-75 h-[40vh] w-full" style={{ backgroundImage: `url(${product})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}>
+ 
       </div>
 
       <div className="flex gap-20 px-[140px] items-center justify-center">

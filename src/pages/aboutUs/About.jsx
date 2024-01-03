@@ -16,6 +16,7 @@ const About = () => {
     return (
         <>
             <div className="about-bg brightness-50 h-[40vh] w-full" style={{ backgroundImage: `url(${building})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}>
+            
             </div>
             <div className="flex mt-24 justify-between px-[140px]">
                 <item className="w-[30%]">
