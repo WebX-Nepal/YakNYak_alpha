@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect, useRef } from "react";
+import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faGooglePlusG, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import yakLogo from "../../assets/logoYak.svg"
@@ -7,35 +7,56 @@ import yakLogo from "../../assets/logoYak.svg"
 
 const navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const activeLink = " text-[#e6bf55] py-2 hover:text-gray-300";
+    const normalLink = " text-white py-2 hover:text-gray-300";
+    const menuRef = useRef(null);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
 
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (menuRef.current && !menuRef.current.contains(event.target)) {
+                closeMenu();
+            }
+        };
+
+        document.addEventListener("click", handleClickOutside);
+
+        return () => {
+            document.removeEventListener("click", handleClickOutside);
+        };
+    }, [menuRef]);
+
     return (
         <>
             <div className="nav-container px-36 flex   font-mono tracking-wider absolute z-10 w-full bg-transparents text-[1.5em]">
                 <div className="nav-menu flex w-full justify-between items-center mt-7">
-                    <ul className="social-media flex gap-5 text-[#e6bf55] text-[.8em]">
-                        <li className="hover:text-[white] transition-all duration-500">
-                            <Link to="/" ><FontAwesomeIcon icon={faTwitter} /></Link>
+                    <ul className="social-media flex gap-5 text-white text-[.8em]">
+                        <li className="hover:text-[#e6bf55] transition-all duration-500">
+                            <NavLink to="/" ><FontAwesomeIcon icon={faTwitter} /></NavLink>
                         </li>
-                        <li className="hover:text-[white] transition-all duration-500">
-                            <Link to="/" ><FontAwesomeIcon icon={faFacebook} /></Link>
+                        <li className="hover:text-[#e6bf55] transition-all duration-500">
+                            <NavLink to="/" ><FontAwesomeIcon icon={faFacebook} /></NavLink>
                         </li>
 
-                        <li className="hover:text-[white] transition-all duration-500">
-                            <Link to="/" ><FontAwesomeIcon icon={faInstagram} /></Link>
+                        <li className="hover:text-[#e6bf55] transition-all duration-500">
+                            <NavLink to="/" ><FontAwesomeIcon icon={faInstagram} /></NavLink>
                         </li>
-                        <li className="hover:text-[white] transition-all duration-500">
-                            <Link to="/" ><FontAwesomeIcon icon={faGooglePlusG} /></Link>
+                        <li className="hover:text-[#e6bf55] transition-all duration-500">
+                            <NavLink to="/" ><FontAwesomeIcon icon={faGooglePlusG} /></NavLink>
                         </li>
                     </ul>
                     <div className="logo">
                         <img src={yakLogo} alt="imgerr" className="mr-16 h-[100px] w-[100px]" />
                     </div>
 
-                    <div className="hamburger">
+                    <div className="hamburger" ref={menuRef}>
                         <nav >
                             <div className="container mx-auto flex justify-between items-center">
                                 {/* <div className="text-white">Logo</div> */}
@@ -65,27 +86,27 @@ const navbar = () => {
 
                                             <div className="flex flex-col items-start px-10 mt-16">
                                                 {/* Your navigation items */}
-                                                <Link to="" className="text-white py-2 hover:text-gray-300" href="#">
+                                                <NavLink to="/" className={({ isActive }) => (isActive ? activeLink : normalLink)} href="#">
                                                     Home
-                                                </Link>
-                                                <a className="text-white py-2 hover:text-gray-300" href="#">
+                                                </NavLink>
+                                                <NavLink to="/about" className={({ isActive }) => (isActive ? activeLink : normalLink)} href="#">
                                                     About Us
-                                                </a>
-                                                <Link to="" className="text-white py-2 hover:text-gray-300" href="#">
+                                                </NavLink>
+                                                <NavLink to="/products" className={({ isActive }) => (isActive ? activeLink : normalLink)} href="#">
                                                     Products
-                                                </Link>
-                                                <Link to="" className="text-white py-2 hover:text-gray-300" href="#">
+                                                </NavLink>
+                                                <NavLink to="/blog" className={({ isActive }) => (isActive ? activeLink : normalLink)} href="#">
                                                     Blog
-                                                </Link>
-                                                <Link to="" className="text-white py-2 hover:text-gray-300" href="#">
+                                                </NavLink>
+                                                <NavLink to="/gallery" className={({ isActive }) => (isActive ? activeLink : normalLink)} href="#">
                                                     Gallery
-                                                </Link>
-                                                <Link to="" className="text-white py-2 hover:text-gray-300" href="#">
+                                                </NavLink>
+                                                <NavLink to="/page" className={({ isActive }) => (isActive ? activeLink : normalLink)} href="#">
                                                     Pages
-                                                </Link>
-                                                <Link to="" className="text-white py-2 hover:text-gray-300" href="#">
+                                                </NavLink>
+                                                <NavLink to="/contact" className={({ isActive }) => (isActive ? activeLink : normalLink)} href="#">
                                                     Contact
-                                                </Link>
+                                                </NavLink>
                                             </div>
                                         </div>
                                     )}

@@ -47,18 +47,18 @@ const Footer = () => {
                             {/* <input type="email" id='email' name='email' placeholder='Your email ...' className='h-16 rounded-full w-full px-6 text-black mt-9' />
 
                             <button className='bg-[#e6bf55] py-5 px-20 font-bold rounded-full text-[1.2em] hover:bg-[#272361] transition-all duration-300  absolute top-[42px] right-[-2px] hover:text-yellow-500 text-[#272361] mt-9'>Subscribe</button> */}
-                            <ul className="social-media flex gap-10 text-[#e6bf55] text-[1.5em] mt-10">
-                                <li className="hover:text-[#272361] transition-all duration-500">
+                            <ul className="social-media flex gap-10  text-white text-[1.5em] mt-10">
+                                <li className="hover:text-[#e6bf55] transition-all duration-500">
                                     <Link to="/" ><FontAwesomeIcon icon={faTwitter} /></Link>
                                 </li>
-                                <li className="hover:text-[#272361] transition-all duration-500">
+                                <li className="hover:text-[#e6bf55] transition-all duration-500">
                                     <Link to="/" ><FontAwesomeIcon icon={faFacebook} /></Link>
                                 </li>
 
-                                <li className="hover:text-[#272361] transition-all duration-500">
+                                <li className="hover:text-[#e6bf55] transition-all duration-500">
                                     <Link to="/" ><FontAwesomeIcon icon={faInstagram} /></Link>
                                 </li>
-                                <li className="hover:text-[#272361] transition-all duration-500">
+                                <li className="hover:text-[#e6bf55] transition-all duration-500">
                                     <Link to="/" ><FontAwesomeIcon icon={faGooglePlusG} /></Link>
                                 </li>
                             </ul>
@@ -67,7 +67,7 @@ const Footer = () => {
                     </div>
 
                     <hr className='mt-24 border-[#454545]' />
-                    <img src={beerIcon} alt="imgerr" srcset="" className='h-16 absolute right-10 mt-[-17px] hover:rotate-180' />
+                    <img src={beerIcon} alt="imgerr" srcset="" className='h-16 absolute right-10 mt-[-17px] animate-bounce' />
 
 
                     <div className="copyright mt-6 px-[20px] pb-7 flex justify-between items-center">

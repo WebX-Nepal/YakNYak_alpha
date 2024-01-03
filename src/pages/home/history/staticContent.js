@@ -3,6 +3,8 @@ import im1832 from "../../../assets/1832.jpg";
 import im1854 from "../../../assets/1854.jpg";
 import im1870 from "../../../assets/1870.jpg";
 import im1887 from "../../../assets/1887.jpg";
+import im1907 from "../../../assets/1907.jpg";
+import im1930 from "../../../assets/1930s.jpg";
 
 export const buttonNames = [
   { year: "1832" },
@@ -52,5 +54,19 @@ export const data = [
       "In 1887, New York-born brothers William and Ralph Foster used an innovative engine-powered refrigeration process to brew Foster's Lager and store it for 60 days at 1.6 degrees Celsius, which aided fermentation. Foster's Lager premiered in Melbourne on 1 February 1889 (the city's hottest month). In an ingenious marketing ploy, any hotel that agreed to sell Foster's received a free supply of ice and the concept of drinking a cold beer on a summer's day (up until this point beer was consumed at room temperature) quickly caught on.",
     year: 1887,
     image: im1887,
+  },
+  {
+    title: "Local breweries unite in tough economic times to create CUB",
+    content:
+      "The 1890s depression hit Victoria hard, forcing many breweries to close and leaving those that remained in fierce competition. In 1907 the Foster's, Carlton, Victoria, Shamrock, McCracken and Castlemaine breweries decided that the only way to survive was to band together and Carlton & United Breweries (CUB) was formed. CUB quickly became a success by taking a scientific approach to brewing, resulting in better flavours and greater consistency.",
+    year: 1907,
+    image: im1907,
+  },
+  {
+    title: "CUB becomes the employer of choice for footballers",
+    content:
+      "It's been said that at any time in the 1930s CUB could have fielded a mighty football team, such was its popularity as an employer of players. At one point, there were so many Collingwood players working at the brewery that a ban was put on employing players from that particular club! Carlton Brewery also employed Charlie Pannam, the first VFL player to reach 100 games and Richmond's captain throughout its inaugural VFL season.",
+    year: "1930s",
+    image: im1930,
   },
 ];
