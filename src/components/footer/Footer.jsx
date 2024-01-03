@@ -11,7 +11,7 @@ import beerIcon from "../../assets/beerIcon.svg";
 const Footer = () => {
     return (
         <>
-            <div className="footer-bg  bg-black/80 h-full w-full px-[120px] mt-14 " style={{ backgroundImage: `url(${footer})`, backgroundRepeat: "no-repeat", backgroundSize: "contain", backgroundPosition: "center" }}>
+            <div className="footer-bg  bg-black/80 h-full w-full px-[120px] mt-24" style={{ backgroundImage: `url(${footer})`, backgroundRepeat: "no-repeat", backgroundSize: "contain", backgroundPosition: "center" }}>
                 <div className="content h-full w-full">
                     <div className=" flex justify-center items-start pt-24 text-white gap-10">
                         <div className="item w-[30%]">
