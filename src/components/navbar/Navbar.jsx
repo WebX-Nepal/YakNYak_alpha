@@ -95,15 +95,15 @@ const navbar = () => {
                                                 <NavLink to="/products" className={({ isActive }) => (isActive ? activeLink : normalLink)} href="#">
                                                     Products
                                                 </NavLink>
-                                                <NavLink to="/blog" className={({ isActive }) => (isActive ? activeLink : normalLink)} href="#">
+                                                {/* <NavLink to="/blog" className={({ isActive }) => (isActive ? activeLink : normalLink)} href="#">
                                                     Blog
-                                                </NavLink>
-                                                <NavLink to="/gallery" className={({ isActive }) => (isActive ? activeLink : normalLink)} href="#">
+                                                </NavLink> */}
+                                                {/* <NavLink to="/gallery" className={({ isActive }) => (isActive ? activeLink : normalLink)} href="#">
                                                     Gallery
-                                                </NavLink>
-                                                <NavLink to="/page" className={({ isActive }) => (isActive ? activeLink : normalLink)} href="#">
+                                                </NavLink> */}
+                                                {/* <NavLink to="/page" className={({ isActive }) => (isActive ? activeLink : normalLink)} href="#">
                                                     Pages
-                                                </NavLink>
+                                                </NavLink> */}
                                                 <NavLink to="/contact" className={({ isActive }) => (isActive ? activeLink : normalLink)} href="#">
                                                     Contact
                                                 </NavLink>
