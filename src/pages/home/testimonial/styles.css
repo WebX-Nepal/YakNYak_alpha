@@ -68,3 +68,29 @@ body {
   stroke-dasharray: 125.6;
   transform: rotate(-90deg);
 }
+
+.mySwiperTestimonial .swiper-button-next {
+  margin-top: -100px;
+  height: 200px;
+  width: 200px;
+  padding: 0 200px;
+  background-image: url(../../../assets/arrows-01.svg);
+  background-repeat: no-repeat;
+}
+.mySwiperTestimonial .swiper-button-next:hover {
+    filter: sepia(100%) saturate(1000%) hue-rotate(9deg);
+  transform: scale(1.1);
+}
+.mySwiperTestimonial .swiper-button-prev {
+  margin-top: -100px;
+  height: 200px;
+  width: 200px;
+  padding: 0 200px;
+  background-image: url(../../../assets/arrows-01.svg);
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+}
+.mySwiperTestimonial .swiper-button-prev:hover {
+    filter: sepia(100%) saturate(1000%) hue-rotate(9deg);
+  height: 210px;
+}

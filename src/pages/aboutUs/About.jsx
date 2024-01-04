@@ -65,7 +65,7 @@ const About = () => {
                 <img src={people} alt="" srcset="" />
             </div>
 
-            <div className="team-members mt-24 px-[140px]">
+            <div className="team-members mt-24 px-[140px] mb-24">
                 <h2 className='font-bold text-[2.2em] text-center text-[#FFBC00]'>Team <span className='text-[#252362]'>Members</span></h2>
                 <p className='w-[50%] m-auto mt-5 text-center text-[#272660]'>Our team is the backbone of our brewing journey—talented individuals driven by a shared passion for excellence. With diverse skills and unwavering dedication, we unite to craft the exceptional flavors that define our brand.</p>
 

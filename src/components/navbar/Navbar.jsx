@@ -33,6 +33,11 @@ const navbar = () => {
         };
     }, [menuRef]);
 
+    // Close the menu when a navigation link is clicked
+    const handleNavLinkClick = () => {
+        closeMenu();
+    };
+
     return (
         <>
             <div className="nav-container px-36 flex   font-mono tracking-wider absolute z-10 w-full bg-transparents text-[1.5em]">
@@ -86,13 +91,13 @@ const navbar = () => {
 
                                             <div className="flex flex-col items-start px-10 mt-16">
                                                 {/* Your navigation items */}
-                                                <NavLink to="/" className={({ isActive }) => (isActive ? activeLink : normalLink)} href="#">
+                                                <NavLink to="/" className={({ isActive }) => (isActive ? activeLink : normalLink)} onClick={handleNavLinkClick} href="#">
                                                     Home
                                                 </NavLink>
-                                                <NavLink to="/about" className={({ isActive }) => (isActive ? activeLink : normalLink)} href="#">
+                                                <NavLink to="/about" className={({ isActive }) => (isActive ? activeLink : normalLink)} onClick={handleNavLinkClick} href="#">
                                                     About Us
                                                 </NavLink>
-                                                <NavLink to="/products" className={({ isActive }) => (isActive ? activeLink : normalLink)} href="#">
+                                                <NavLink to="/products" className={({ isActive }) => (isActive ? activeLink : normalLink)} onClick={handleNavLinkClick} href="#">
                                                     Products
                                                 </NavLink>
                                                 {/* <NavLink to="/blog" className={({ isActive }) => (isActive ? activeLink : normalLink)} href="#">
@@ -104,7 +109,7 @@ const navbar = () => {
                                                 {/* <NavLink to="/page" className={({ isActive }) => (isActive ? activeLink : normalLink)} href="#">
                                                     Pages
                                                 </NavLink> */}
-                                                <NavLink to="/contact" className={({ isActive }) => (isActive ? activeLink : normalLink)} href="#">
+                                                <NavLink to="/contact" className={({ isActive }) => (isActive ? activeLink : normalLink)} onClick={handleNavLinkClick} href="#">
                                                     Contact
                                                 </NavLink>
                                             </div>

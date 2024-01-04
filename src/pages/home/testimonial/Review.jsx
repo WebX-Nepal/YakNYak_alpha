@@ -40,7 +40,7 @@ const Review = () => {
                             navigation={true}
                             modules={[Autoplay, Pagination, Navigation]}
                             onAutoplayTimeLeft={onAutoplayTimeLeft}
-                            className="mySwiper"
+                            className="mySwiperTestimonial"
                         >
                             <SwiperSlide className='flex flex-col'>
                                 <img src={user1} alt="" style={{ height: "70px", width: "70px" }} className='mt-20' />

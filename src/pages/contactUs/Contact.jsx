@@ -95,7 +95,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <button className='bg-[#e6bf55] py-5 px-20 font-bold rounded-full mt-10 text-[1.2em]  transition-all duration-300 hover:bg-[#272361] text-[#272361] hover:text-[#e6bf55] '>Send</button>
+                <button className='bg-[#e6bf55] py-5 px-20 font-bold rounded-full mt-10 text-[1.2em]  transition-all duration-300 hover:bg-[#272361] text-[#272361] hover:text-[#e6bf55] mb-24'>Send</button>
             </div>
         </>
     )

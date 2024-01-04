@@ -38,7 +38,7 @@ const Hero = () => {
                     clickable: true,
                 }}
                 modules={[Autoplay, EffectFade, Navigation, Parallax, Pagination]}
-                className="mySwiper"
+                className="mySwiperHero"
             >
                 <SwiperSlide className='slide1-bg'>
                     <div className="content-slide2 flex flex-col items-center justify-center  h-full w-full bg-black/60">
