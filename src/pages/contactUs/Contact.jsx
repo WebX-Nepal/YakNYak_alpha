@@ -1,6 +1,6 @@
-import React from 'react'
+
 import contact from "../../assets/contact.png";
-import map from "../../assets/map.png";
+// import map from "../../assets/map.png";
 import mapIcon from "../../assets/mapIcon.svg";
 import mailIcon from "../../assets/mailIcon.svg";
 import mingcuteIcon from "../../assets/mingcuteIcon.svg";
@@ -12,31 +12,32 @@ import user3 from "../../assets/user3.svg";
 const Contact = () => {
     return (
         <>
-            <div className="about-bg brightness-90 h-[40vh] w-full" style={{ backgroundImage: `url(${contact})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}>
-                <h1 className='flex items-end h-full justify-center text-white text-[3em] font-bold tracking-wider xl:ml-[30px]'>Contact</h1>
-            </div>
+            <div className="about-bg brightness-90 h-[40vh] w-full relative" style={{ backgroundImage: `url(${contact})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }} />
 
 
-            <div className="flex px-[140px] gap-10 mt-24 justify-center">
+            <h1 className='text-white text-[3em] font-bold tracking-wider absolute top-[30%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 ml-3'>Contact</h1>
+
+
+            {/* <div className="flex px-[140px] gap-10 mt-24 justify-center">
                 <div className="item w-[50%]">
                     <h2 className='font-bold text-[1.2em]'>GET IN TOUCH</h2>
                     <h2 className='font-bold text-[2em] mt-4'>Visit one of our agency locations or contact us today</h2>
                     <h3 className='font-bold mt-4 text-[1.2em]'>Head Office</h3>
                     <div className="contact-details mt-5">
                         <div className="flex gap-5 items-center">
-                            <img src={mapIcon} alt="" srcset="" />
+                            <img src={mapIcon} alt="" />
                             <h3 className='text-[1.2em] text-[grey]'>GoldschmidtstraBe 13,04103 leipzig</h3>
                         </div>
                         <div className="flex gap-5 items-center mt-4">
-                            <img src={mailIcon} alt="" srcset="" />
+                            <img src={mailIcon} alt="" />
                             <h3 className='text-[1.2em] text-[grey]'>yakcorps@gmail.com</h3>
                         </div>
                         <div className="flex gap-5 items-center mt-4">
-                            <img src={mingcuteIcon} alt="" srcset="" />
+                            <img src={mingcuteIcon} alt="" />
                             <h3 className='text-[1.2em] text-[grey]'>Monday to Saturday, 9:00am to 16:00 pm</h3>
                         </div>
                         <div className="flex gap-5 items-center mt-4">
-                            <img src={phoneIcon} alt="" srcset="" />
+                            <img src={phoneIcon} alt="" />
                             <h3 className='text-[1.2em] text-[grey]'>+977 987654322 , +01 123453</h3>
                         </div>
                     </div>
@@ -44,7 +45,7 @@ const Contact = () => {
                 <div className="item w-[50%]">
                     <img src={map} alt="maperr" className='h-[90%]' />
                 </div>
-            </div>
+            </div> */}
 
             <div className="message px-[140px] mt-24">
                 <h2 className='text-[grey] text-[1.2em]'>LEAVE A MESSAGE</h2>

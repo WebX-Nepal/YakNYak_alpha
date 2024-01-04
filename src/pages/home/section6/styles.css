@@ -36,11 +36,11 @@ body {
   padding: 0 330px;
   background-image: url(../../../assets/arrows-01.svg);
   background-repeat: no-repeat;
-  filter: invert(1);
+  filter: invert(0.7);
 }
 .mySwiperSec6 .swiper-button-next:hover {
-  filter: sepia(100%) saturate(1000%) hue-rotate(9deg);
-  margin-top: -25px;
+  filter: sepia(100%) saturate(1000%) hue-rotate(10deg);
+  margin-right: -10px;
 }
 .mySwiperSec6 .swiper-button-prev {
   height: 200px;
@@ -49,9 +49,9 @@ body {
   background-image: url(../../../assets/arrows-01.svg);
   background-repeat: no-repeat;
   transform: scaleX(-1);
-  filter: invert(1);
+  filter: invert(0.7);
 }
 .mySwiperSec6 .swiper-button-prev:hover {
   filter: sepia(100%) saturate(1000%) hue-rotate(9deg);
-  height: 210px;
+  margin-left: -10px;
 }

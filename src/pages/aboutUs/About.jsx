@@ -1,23 +1,24 @@
-import React from 'react'
 
 import building from "../../assets/building.jpg";
 import price from "../../assets/price.svg";
 import tap from "../../assets/tap.svg";
 import team from "../../assets/team.svg";
-import people from "../../assets/people.png";
+// import people from "../../assets/people.png";
 import one from "../../assets/one.png";
 import two from "../../assets/two.png";
 import three from "../../assets/three.png";
 import four from "../../assets/ashish.jpg";
+import beerPromo from "../../assets/beerPromo.mp4";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 const About = () => {
     return (
         <>
-            <div className="about-bg brightness-50 h-[40vh] w-full" style={{ backgroundImage: `url(${building})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}>
-            
-            </div>
+            <div className="about-bg brightness-50 h-[40vh] w-full relative" style={{ backgroundImage: `url(${building})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }} />
+            <h1 className='text-white text-[3em] font-bold tracking-wider absolute top-[30%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 ml-3'>About Us</h1>
+
+
             <div className="flex mt-24 justify-between px-[140px]">
                 <item className="w-[30%]">
                     <h2 className='text-[#252362] text-[3em] font-bold font-sans'>
@@ -61,8 +62,11 @@ const About = () => {
                 </div>
             </div>
 
-            <div className="img-container mt-24 flex justify-center h-[50vh]">
-                <img src={people} alt="" srcset="" />
+            <div className="img-container mt-24 flex justify-center ">
+                {/* <img src={people} alt="" srcset="" /> */}
+                <video className="w-[100vw]" autoPlay loop muted playsInline>
+                    <source src={beerPromo} type="video/mp4" />
+                </video>
             </div>
 
             <div className="team-members mt-24 px-[140px] mb-24">
@@ -84,7 +88,7 @@ const About = () => {
                         <div className="absolute bottom-5 left-5 right-5 p-3  bg-[#252362] rounded-2xl">
                             <div className="flex items-center justify-between">
                                 <div className="naming_flex_ceo text-white">
-                                    <h1 className="font-semibold text-md ">Gehendra Yadav</h1>
+                                    <h1 className="font-semibold text-md ">John Duel</h1>
                                     <h2>Co-founder & CEO</h2>
                                 </div>
                                 <div className="ceo_icon">
@@ -109,8 +113,8 @@ const About = () => {
                         <div className="absolute bottom-5 left-5 right-5 p-3  bg-[#252362] rounded-2xl">
                             <div className="flex items-center justify-between">
                                 <div className="naming_flex_ceo text-white">
-                                    <h1 className="font-semibold text-md">Rojan G. Mul</h1>
-                                    <h2>CTO</h2>
+                                    <h1 className="font-semibold text-md">Paul Haymen</h1>
+                                    <h2>General Manager</h2>
                                 </div>
 
                                 <div className="ceo_icon">
@@ -135,8 +139,8 @@ const About = () => {
                         <div className="absolute bottom-5 left-5 right-5 p-3  bg-[#252362] rounded-2xl">
                             <div className="flex items-center justify-between">
                                 <div className="naming_flex_ceo text-white">
-                                    <h1 className="font-semibold text-md">Ankit Shrestha</h1>
-                                    <h2>Frontend Developer</h2>
+                                    <h1 className="font-semibold text-md">Eric Ries</h1>
+                                    <h2>Writer</h2>
                                 </div>
                                 <div className="ceo_icon">
                                     <a href="https://linkedin.com" target="_black">
@@ -161,7 +165,7 @@ const About = () => {
                             <div className="flex items-center justify-between">
                                 <div className="naming_flex_ceo text-white">
                                     <h1 className="font-semibold text-md">Ashish Lawaju</h1>
-                                    <h2>Backend Developer</h2>
+                                    <h2>CTO</h2>
                                 </div>
                                 <div className="ceo_icon">
                                     <a href="https://linkedin.com" target="_black">

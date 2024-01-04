@@ -78,8 +78,8 @@ body {
   background-repeat: no-repeat;
 }
 .mySwiperTestimonial .swiper-button-next:hover {
-    filter: sepia(100%) saturate(1000%) hue-rotate(9deg);
-  transform: scale(1.1);
+  filter: sepia(100%) saturate(1000%) hue-rotate(9deg);
+  margin-right: -10px;
 }
 .mySwiperTestimonial .swiper-button-prev {
   margin-top: -100px;
@@ -91,6 +91,6 @@ body {
   transform: scaleX(-1);
 }
 .mySwiperTestimonial .swiper-button-prev:hover {
-    filter: sepia(100%) saturate(1000%) hue-rotate(9deg);
-  height: 210px;
+  filter: sepia(100%) saturate(1000%) hue-rotate(9deg);
+  margin-left: -10px;
 }

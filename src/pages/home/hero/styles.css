@@ -31,7 +31,7 @@ body {
 }
 .mySwiperHero .swiper-button-next:hover {
   filter: sepia(100%) saturate(1000%) hue-rotate(9deg);
-  transform: scale(1.1);
+  transform: scaleX(0.9);
 }
 .mySwiperHero .swiper-button-prev {
   margin-top: -100px;
@@ -44,7 +44,7 @@ body {
 }
 .mySwiperHero .swiper-button-prev:hover {
   filter: sepia(100%) saturate(1000%) hue-rotate(9deg);
-  height: 210px;
+  margin-left: -10px;
 }
 
 .swiper-button-next:after {

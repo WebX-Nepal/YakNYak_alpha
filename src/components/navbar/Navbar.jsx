@@ -76,7 +76,7 @@ const navbar = () => {
                                     </button>
 
                                     {isOpen && (
-                                        <div className=" absolute top-0 right-0 w-[50%] h-screen bg-[#262022] transition-opacity duration-300 ease-in-out opacity-100 p-10">
+                                        <div className=" absolute top-0 right-0 w-[30%] h-screen bg-[#262022] transition-opacity duration-300 ease-in-out opacity-100 p-10">
                                             <div className="flex justify-between p-4">
                                                 <div className="logo">
                                                     <img src={yakLogo} alt="logoimgerr" className="h-20" />

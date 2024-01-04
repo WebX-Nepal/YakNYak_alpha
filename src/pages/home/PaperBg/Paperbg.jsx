@@ -47,10 +47,8 @@ const Paperbg = () => {
 
                                 {/* <div className="image w-full h-full">
                                     {index == 3 || 1 && (
-                                        <img src={arrow} alt="" height={200} width={400} />
+                                        <img src={arrow} alt="" height={200} width={50} />
                                     )}
-
-
                                 </div> */}
 
                             </div>
