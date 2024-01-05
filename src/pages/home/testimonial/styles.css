@@ -94,3 +94,11 @@ body {
   filter: sepia(100%) saturate(1000%) hue-rotate(9deg);
   margin-left: -10px;
 }
+
+
+@media screen and (max-width: 600px) {
+  .mySwiperTestimonial .swiper-button-next ,
+   .mySwiperTestimonial .swiper-button-prev {
+  display: none;
+}
+}

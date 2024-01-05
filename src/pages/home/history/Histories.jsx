@@ -39,29 +39,33 @@ const Histories = () => {
     return (
         <>
             <div className="article  w-full bg-white pb-20" >
-                <div className="content">
+                <div className="content px-5 sm:px-0">
                     <h1 className='text-center font-bold text-[2em] xl:w-[60%] m-auto pt-24 tracking-wider'>Carlton & United Breweries is the most iconic beer company in Australia, with a history dating back to 1832</h1>
-                    <div className="history-year flex gap-10 font-bold justify-center mt-20">
+                    <div className="history-year flex flex-wrap gap-10 font-bold justify-center mt-20 px-4 sm:px-0">
                         {buttonNames.map((item, index) => {
-                            return <div> <div key={index} className={`${displayYear == item.year ? "text-[#e6bf55] mt-[-15px] text-[2em]" : "text-black"} text-[1.5em] cursor-pointer`}>
-                                <butoon
-                                    onClick={() => setDisplayYear(item.year)} >{item.year}</butoon>
+                            return (
+                                <>
+                                    <div> <div key={index} className={`${displayYear == item.year ? "text-[#e6bf55] mt-[-15px] text-[2em]" : "text-black"} sm:text-[1.5em] cursor-pointer `}>
+                                        <butoon
+                                            onClick={() => setDisplayYear(item.year)} >{item.year}</butoon>
 
-                            </div>
-                                <FontAwesomeIcon icon={faCircle} className='h-2 w-full' />
-                            </div>
+                                    </div>
+                                        <FontAwesomeIcon icon={faCircle} className='h-2 w-full' />
+                                    </div>
+                                </>
+                            )
                         })}
                     </div>
-                    <div className="history-details mt-20">
+                    <div className="history-details mt-10 sm:mt-20">
                         {data.map((item, index) => {
                             if (displayYear == item.year)
                                 return (<>
-                                    <div key={index} className="history-container flex  w-full justify-center gap-16">
-                                        <div className="content w-[30%]">
-                                            <h1 className='font-bold text-[1.5em] '>{item.title}</h1>
-                                            <p className='text-[grey] mt-5 text-[1.2em] tracking-wider'>{item.content}</p>
+                                    <div key={index} className="history-container flex flex-wrap sm:flex-nowrap w-full justify-center gap-16">
+                                        <div className="content sm:w-[30%]">
+                                            <h1 className='font-bold text-center sm:text-start text-[1.5em] '>{item.title}</h1>
+                                            <p className='text-[grey] mt-5 text-[1.2em] tracking-wider text-center sm:text-start'>{item.content}</p>
                                         </div>
-                                        <div className="content-img w-[40%]">
+                                        <div className="content-img sm:w-[40%]">
                                             <img src={item.image} alt="img err" className='xl:h-[500px] xl:w-[600px] object-cover' />
                                         </div>
                                     </div>

@@ -18,10 +18,10 @@ const Paperbg = () => {
     console.log("isHovered is", isHovered)
     return (
         <>
-            <div className="paper-bg h-[115vh] w-full">
-                <h2 className='text-[2.5em] w-[65%] m-auto font-bold pt-24 text-center'>« Our brewery uses classical <span className='text-[#e6bf55]'>individual beer technology</span> , we practice innovation and experimentation. »</h2>
+            <div className="paper-bg xl:h-[115vh] w-full">
+                <h2 className='text-[2em] sm:text-[2.5em] md:w-[65%] m-auto font-bold pt-24 text-center px-4 sm:px-0'>« Our brewery uses classical <span className='text-[#e6bf55]'>individual beer technology</span> , we practice innovation and experimentation. »</h2>
 
-                <div className="flex justify-center items-center text-center gap-10 w-[80%] m-auto pt-20">
+                <div className="flex flex-wrap sm:flex-nowrap justify-center items-center text-center gap-10 w-[80%] m-auto pt-10 sm:pt-20 pb-10 sm:pb-0">
 
 
                     {data.map((item, index) => {

@@ -88,3 +88,10 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+@media screen and (max-width: 600px) {
+  .mySwiperHero .swiper-button-next ,
+   .mySwiperHero .swiper-button-prev {
+  display: none;
+}
+}

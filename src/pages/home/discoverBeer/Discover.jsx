@@ -14,13 +14,22 @@ import yaknNak2 from "../../../assets/beer2.png";
 const Discover = () => {
     return (
         <>
-            <div className="discover h-[150vh] w-full">
-                <div className="heading w-[50%] m-auto pt-20">
-                    <h1 className='text-center font-bold text-[3em]'>Discover our beer</h1>
+            <div className="discover xl:h-[150vh] w-full">
+                <div className="heading xl:w-[50%] m-auto pt-20 px-5 sm:px-0">
+                    <h1 className='text-center font-bold text-[2em]  sm:text-[3em]'>Discover our beer</h1>
                     <p className='text-center text-[grey] pt-5 text-[1.2em]'>The YakNYak is a delightful fusion of toasted grains and floral notes, inviting you to experience a taste journey reminiscent of a crisp mountain breeze. With a medium body and a smooth finish, 'Yak N Yak' is the perfect companion for those seeking a flavorful and refreshing escape. Raise your glass and savor the taste of nature in every sip.</p>
                 </div>
-                <div className="swiper-beer pt-10 ">
-                    <Swiper watchSlidesProgress={true} slidesPerView={3} className="swipper">
+                <div className="swiper-beer sm:pt-10 ">
+                    <Swiper watchSlidesProgress={true} breakpoints={{
+                        // when window width is >= 768px
+                        768: {
+                            slidesPerView: 3,
+                        },
+                        // when window width is < 768px
+                        0: {
+                            slidesPerView: 1,
+                        },
+                    }} className="swipper">
                         <SwiperSlide>
 
                             <img src={yaknNak} alt="" className="hover:scale-105 transition-all duration-300" style={{ objectFit: "cover", height: "80%" }} />

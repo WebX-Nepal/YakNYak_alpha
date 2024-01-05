@@ -40,9 +40,9 @@ const navbar = () => {
 
     return (
         <>
-            <div className="nav-container px-36 flex   font-mono tracking-wider absolute z-10 w-full bg-transparents text-[1.5em]">
+            <div className="nav-container px-3 xl:px-36 flex   font-mono tracking-wider absolute z-10 w-full bg-transparents text-[1.5em]">
                 <div className="nav-menu flex w-full justify-between items-center mt-7">
-                    <ul className="social-media flex gap-5 text-white text-[.8em]">
+                    <ul className="social-media hidden sm:inline-block sm:flex sm:gap-5 text-white text-[.8em]">
                         <li className="hover:text-[#e6bf55] transition-all duration-500">
                             <NavLink to="/" ><FontAwesomeIcon icon={faTwitter} /></NavLink>
                         </li>
@@ -76,7 +76,7 @@ const navbar = () => {
                                     </button>
 
                                     {isOpen && (
-                                        <div className=" absolute top-0 right-0 w-[30%] h-screen bg-[#262022] transition-opacity duration-300 ease-in-out opacity-100 p-10">
+                                        <div className=" absolute top-0 right-0 w-[100%]  sm:w-[30%] h-screen bg-[#262022] transition-opacity duration-300 ease-in-out opacity-100 p-10">
                                             <div className="flex justify-between p-4">
                                                 <div className="logo">
                                                     <img src={yakLogo} alt="logoimgerr" className="h-20" />
