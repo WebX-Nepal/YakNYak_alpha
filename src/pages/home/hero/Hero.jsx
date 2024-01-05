@@ -14,7 +14,8 @@ import './styles.css';
 
 // import required modules
 import {
-     EffectFade, Navigation, Pagination,
+    Autoplay,
+    EffectFade, Navigation, Pagination,
     Parallax,
 } from 'swiper/modules';
 
@@ -29,15 +30,15 @@ const Hero = () => {
                 effect={'fade'}
                 parallax={true}
                 speed={1500}
-                // autoplay={{
-                //     delay: 2500,
-                //     disableOnInteraction: false,
-                // }}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
                 navigation={true}
                 pagination={{
                     clickable: true,
                 }}
-                modules={[ EffectFade, Navigation, Parallax, Pagination]}
+                modules={[Autoplay, EffectFade, Navigation, Parallax, Pagination]}
                 className="mySwiperHero"
             >
                 <SwiperSlide className='slide1-bg'>

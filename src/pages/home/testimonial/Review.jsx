@@ -10,7 +10,7 @@ import 'swiper/css/navigation';
 import './styles.css';
 
 // import required modules
-import { Pagination, Navigation } from 'swiper/modules';
+import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 
 import user1 from "../../../assets/group6.png";
 
@@ -30,15 +30,15 @@ const Review = () => {
                         <Swiper
                             spaceBetween={30}
                             centeredSlides={true}
-                            // autoplay={{
-                            //     delay: 2500,
-                            //     disableOnInteraction: false,
-                            // }}
+                            autoplay={{
+                                delay: 2500,
+                                disableOnInteraction: false,
+                            }}
                             pagination={{
                                 clickable: true,
                             }}
                             navigation={true}
-                            modules={[Pagination, Navigation]}
+                            modules={[Autoplay, Pagination, Navigation]}
                             onAutoplayTimeLeft={onAutoplayTimeLeft}
                             className="mySwiperTestimonial px-5 py-10 sm:py-0 sm:px-0"
                         >
