@@ -28,7 +28,6 @@ function App() {
       <Review />
       {/* <Divider2 /> */}
       {/* <Articles /> */}
-
     </>
   )
 }

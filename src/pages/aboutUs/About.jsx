@@ -16,26 +16,26 @@ const About = () => {
     return (
         <>
             <div className="about-bg brightness-50 h-[40vh] w-full relative" style={{ backgroundImage: `url(${building})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }} />
-            <h1 className='text-white text-[3em] font-bold tracking-wider absolute top-[30%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 ml-3'>About Us</h1>
+            <h1 className='text-white text-[2.3em] whitespace-nowrap sm:text-[3em] font-bold tracking-wider absolute top-[30%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 ml-3'>About Us</h1>
 
 
-            <div className="flex mt-24 justify-between px-[140px]">
-                <item className="w-[30%]">
+            <div className="flex flex-wrap md:flex-nowrap mt-24 justify-between px-4 xl:px-[140px]">
+                <item className="xl:w-[30%]">
                     <h2 className='text-[#252362] text-[3em] font-bold font-sans'>
                         <span className='text-[#FFBC00]'>Introduction</span> to best beer brewing company!
                     </h2>
                 </item>
-                <item className="w-[27%] tracking-wider leading-7 mt-4">
+                <item className="xl:w-[27%] tracking-wider leading-7 mt-4">
                     <p>Welcome to our Beer Section, a haven for beer enthusiasts. Explore a curated selection of craft brews, from crisp lagers to bold IPAs. Dive into tasting notes, brewery spotlights, and expert recommendations.</p>
                 </item>
-                <item className="w-[27%] tracking-wider leading-7 mt-4">
+                <item className="xl:w-[27%] tracking-wider leading-7 mt-4">
                     <p>Join us on this narrative journey, where each chapter is a celebration of our dedication to crafting moments that go beyond the pour. Cheers to the stories that make us who we are!</p>
                 </item>
             </div>
-            <div className="flex gap-10 px-[140px] mt-24">
+            <div className="flex flex-wrap md:flex-nowrap gap-10 px-4 xl:px-[140px] mt-24">
                 <div className="flex items-center gap-5 border-[2px] rounded-md p-3">
                     <div className="icon">
-                        <img src={price} alt="" srcset="" />
+                        <img src={price} alt=""  />
                     </div>
                     <div className="details">
                         <h1 className="font-bold text-[1.3em]">Best Price Guaranteed</h1>
@@ -44,7 +44,7 @@ const About = () => {
                 </div>
                 <div className="flex items-center gap-5 border-[2px] rounded-md p-3">
                     <div className="icon">
-                        <img src={tap} alt="" srcset="" />
+                        <img src={tap} alt=""  />
                     </div>
                     <div className="details">
                         <h1 className="font-bold text-[1.3em]">Best Price Guaranteed</h1>
@@ -53,7 +53,7 @@ const About = () => {
                 </div>
                 <div className="flex items-center gap-5 border-[2px] rounded-md p-3">
                     <div className="icon">
-                        <img src={team} alt="" srcset="" />
+                        <img src={team} alt=""  />
                     </div>
                     <div className="details">
                         <h1 className="font-bold text-[1.3em]">Best Price Guaranteed</h1>
@@ -69,9 +69,9 @@ const About = () => {
                 </video>
             </div>
 
-            <div className="team-members mt-24 px-[140px] mb-24">
+            <div className="team-members mt-24 px-4 xl:px-[140px] mb-24">
                 <h2 className='font-bold text-[2.2em] text-center text-[#FFBC00]'>Team <span className='text-[#252362]'>Members</span></h2>
-                <p className='w-[50%] m-auto mt-5 text-center text-[#272660]'>Our team is the backbone of our brewing journey—talented individuals driven by a shared passion for excellence. With diverse skills and unwavering dedication, we unite to craft the exceptional flavors that define our brand.</p>
+                <p className='xl:w-[50%] m-auto mt-5 text-center text-[#272660]'>Our team is the backbone of our brewing journey—talented individuals driven by a shared passion for excellence. With diverse skills and unwavering dedication, we unite to craft the exceptional flavors that define our brand.</p>
 
                 <div className="flex flex-wrap  gap-10 sm:gap-10 md:gap-5 lg:gap-10 xl:gap-5 justify-center md:justify-around max-[450px]:text-[.5em] sm:text-[1em] mt-24">
                     <div className=" relative h-[400px] w-96 sm:w-80 md:w-80 lg:w-72">

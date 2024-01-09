@@ -1,14 +1,19 @@
-import React from 'react'
-import { Link } from "react-router-dom";
+
+import { Link, useLocation } from "react-router-dom";
 import footer from "../../assets/footer.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faGooglePlusG, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import logo from "../../assets/logoYak.svg";
 import { faLocationDot, faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
-
 import beerIcon from "../../assets/beerIcon.svg";
 
 const Footer = () => {
+    const location = useLocation();
+
+    if (location.pathname === '/') {
+        return null;
+    }
+
     return (
         <>
             <div className="footer-bg  bg-black/80 h-full w-full px-4 xl:px-[120px] " style={{ backgroundImage: `url(${footer})`, backgroundRepeat: "no-repeat", backgroundSize: "contain", backgroundPosition: "center" }}>

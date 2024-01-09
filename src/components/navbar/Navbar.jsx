@@ -1,15 +1,22 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faGooglePlusG, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import yakLogo from "../../assets/logoYak.svg"
 
 
-const navbar = () => {
+
+const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const activeLink = " text-[#e6bf55] py-2 hover:text-gray-300";
     const normalLink = " text-white py-2 hover:text-gray-300";
-    const menuRef = useRef(null);
+    // const menuRef = useRef(null);
+    const location = useLocation();
+
+    if (location.pathname === '/') {
+        return null;
+    }
+
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -19,19 +26,19 @@ const navbar = () => {
         setIsOpen(false);
     };
 
-    useEffect(() => {
-        const handleClickOutside = (event) => {
-            if (menuRef.current && !menuRef.current.contains(event.target)) {
-                closeMenu();
-            }
-        };
+    // useEffect(() => {
+    //     const handleClickOutside = (event) => {
+    //         if (menuRef.current && !menuRef.current.contains(event.target)) {
+    //             closeMenu();
+    //         }
+    //     };
 
-        document.addEventListener("click", handleClickOutside);
+    //     document.addEventListener("click", handleClickOutside);
 
-        return () => {
-            document.removeEventListener("click", handleClickOutside);
-        };
-    }, [menuRef]);
+    //     return () => {
+    //         document.removeEventListener("click", handleClickOutside);
+    //     };
+    // }, [menuRef]);
 
     // Close the menu when a navigation link is clicked
     const handleNavLinkClick = () => {
@@ -61,7 +68,7 @@ const navbar = () => {
                         <img src={yakLogo} alt="imgerr" className="mr-16 h-[100px] w-[100px]" />
                     </div>
 
-                    <div className="hamburger" ref={menuRef}>
+                    <div className="hamburger">
                         <nav >
                             <div className="container mx-auto flex justify-between items-center">
                                 {/* <div className="text-white">Logo</div> */}
@@ -91,7 +98,7 @@ const navbar = () => {
 
                                             <div className="flex flex-col items-start px-10 mt-16">
                                                 {/* Your navigation items */}
-                                                <NavLink to="/" className={({ isActive }) => (isActive ? activeLink : normalLink)} onClick={handleNavLinkClick} href="#">
+                                                <NavLink to="/home" className={({ isActive }) => (isActive ? activeLink : normalLink)} onClick={handleNavLinkClick} href="#">
                                                     Home
                                                 </NavLink>
                                                 <NavLink to="/about" className={({ isActive }) => (isActive ? activeLink : normalLink)} onClick={handleNavLinkClick} href="#">
@@ -127,4 +134,4 @@ const navbar = () => {
     );
 };
 
-export default navbar;
+export default Navbar;

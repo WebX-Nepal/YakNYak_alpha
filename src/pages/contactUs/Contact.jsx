@@ -1,10 +1,10 @@
 
 import contact from "../../assets/contact.png";
 // import map from "../../assets/map.png";
-import mapIcon from "../../assets/mapIcon.svg";
-import mailIcon from "../../assets/mailIcon.svg";
-import mingcuteIcon from "../../assets/mingcuteIcon.svg";
-import phoneIcon from "../../assets/phoneIcon.svg";
+// import mapIcon from "../../assets/mapIcon.svg";
+// import mailIcon from "../../assets/mailIcon.svg";
+// import mingcuteIcon from "../../assets/mingcuteIcon.svg";
+// import phoneIcon from "../../assets/phoneIcon.svg";
 import user1 from "../../assets/user1.svg";
 import user2 from "../../assets/user2.svg";
 import user3 from "../../assets/user3.svg";
@@ -15,7 +15,7 @@ const Contact = () => {
             <div className="about-bg brightness-90 h-[40vh] w-full relative" style={{ backgroundImage: `url(${contact})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }} />
 
 
-            <h1 className='text-white text-[3em] font-bold tracking-wider absolute top-[30%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 ml-3'>Contact</h1>
+            <h1 className='text-white whitespace-nowrap text-[2.4em] sm:text-[3em] font-bold tracking-wider absolute top-[30%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 ml-3'>Contact</h1>
 
 
             {/* <div className="flex px-[140px] gap-10 mt-24 justify-center">
@@ -47,12 +47,12 @@ const Contact = () => {
                 </div>
             </div> */}
 
-            <div className="message px-[140px] mt-24">
+            <div className="message px-4 xl:px-[140px] mt-24">
                 <h2 className='text-[grey] text-[1.2em]'>LEAVE A MESSAGE</h2>
 
-                <div className="flex justify-between">
-                    <div className="item w-[50%]">
-                        <h2 className='text-[2.6em] font-bold text-[#252362] mt-4'>We love to hear from you</h2>
+                <div className="flex flex-wrap md:flex-nowrap justify-between">
+                    <div className="item xl:w-[50%]">
+                        <h2 className='text-[2em] md:text-[2.6em] font-bold text-[#252362] mt-4'>We love to hear from you</h2>
                         <div className="input-field flex flex-col gap-10 mt-10">
                             <input type="text" id='name' placeholder='Your Name' className='border-2 p-3' />
                             <input type="email" id='email' placeholder='E - mail' className='border-2 p-3' />
@@ -61,10 +61,10 @@ const Contact = () => {
                         </div>
                     </div>
                     <hr />
-                    <div className="item w-[30%]">
-                        <div className="contact-details mt-10 flex flex-col gap-8">
+                    <div className="item xl:w-[30%]">
+                        <div className="contact-details mt-10 flex flex-col  gap-5 md:gap-8">
                             <div className="flex gap-7 items-center">
-                                <img src={user1} alt="" srcset="" className="rounded-full" />
+                                <img src={user1} alt=""  className="rounded-full" />
                                 <div className="flex flex-col">
                                     <h3 className='text-[1.3em] font-bold'>John Doe</h3>
                                     <h5 className='text-[grey]'>Marketing manager</h5>
@@ -74,7 +74,7 @@ const Contact = () => {
                             </div>
                             <hr />
                             <div className="flex gap-7 items-center mt-4">
-                                <img src={user2} alt="" srcset="" className="rounded-full" />
+                                <img src={user2} alt=""  className="rounded-full" />
                                 <div className="flex flex-col">
                                     <h3 className='text-[1.3em] font-bold'>John Doe</h3>
                                     <h5 className='text-[grey]'>CEO</h5>
@@ -84,7 +84,7 @@ const Contact = () => {
                             </div>
                             <hr />
                             <div className="flex gap-7 items-center mt-4">
-                                <img src={user3} alt="" srcset="" className="rounded-full" />
+                                <img src={user3} alt=""  className="rounded-full" />
                                 <div className="flex flex-col">
                                     <h3 className='text-[1.3em] font-bold'>John Doe</h3>
                                     <h5 className='text-[grey]'>Manager</h5>
